@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./sytle.css" />
+  </head>
+  <body>
+    <div class="main-head">
+      <h1 class="heading">UNIVERSITY OF NAIROBI MISSING MARKS REGISTRATION</h1>
+      <div class="sub-heading">
+        <p><button>portal Home</button></p>
+        <p><button>student Fees</button></p>
+        <p><button>Timetables</button></p>
+        <p><button>course registration</button></p>
+        <p><button>results</button></p>
+        <p><button>Enquiries</button></p>
+        <p><button>Book Room</button></p>
+        <p><button>log out</button></p>
+      </div>
+    </div>
+
+    <h2 class="login"><button>LOGIN DETAILS</button></h2>
+    <div class="container">
+      <form action="submit" method="post">
+        <label for="country">Your name:</label>
+        <input type="text" id="country" class="country" />
+
+        <label for="country">Reg number:</label>
+        <input type="text" id="country" class="country" />
+        <button type="submit">submit</button>
+      </form>
+    </div>
+    <div class="text">
+      <b>ENTER YOUR FACULTY </b>
+    </div>
+    <div class="faculty">
+      <form action="submit" method="input">
+        <label for="name">FACULTY</label>
+        <input type="text" class="name" id="name" />
+        <button type="submit">
+          <label> <input type="checkbox" id="myCheckbox" /></label>
+        </button>
+        <label for="name">REG NO:</label>
+        <input type="text" class="name" id="name" />
+        <button type="submit">
+          <label> <input type="checkbox" id="myCheckbox" /></label>
+        </button>
+        <label for="name">YEAR OF ACADEMIC</label>
+        <input type="text" class="name" id="name" />
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+    <div class="comment">
+      HAVE YOU FINISH TO CLEAR YOUR FEE?
+      <label> <input type="checkbox" id="myCheckbox" /> YES </label>
+      <label> <input type="checkbox" id="myCheckbox" /> NO </label>
+    </div>
+    <div class="form1">
+      <form id="myForm">
+        <label for="comment">Your Comment:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+
+        <br />
+
+        <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      function submitForm() {
+        var comment = document.getElementById("comment").value;
+        alert("Submitted Comment: " + comment);
+      }
+    </script>
+  </body>
+</html>
